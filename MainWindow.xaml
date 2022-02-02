@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Sistema de gestion" Height="300" Width="400">
     <Grid>
+        <StackPanel>
+            <Menu>
+            
+                <MenuItem Header="Registros">
+                    <MenuItem Header ="Registros" x:Name="rRegistro" Click="RegistroRegistrosMenuItem_Click" />
+                </MenuItem>
 
+                <MenuItem Header="Consultas">
+                    <MenuItem Header="Consultas" x:Name = "cConsulta" Click="ConsultaConsultasMenuItem_Click" />
+                </MenuItem>
+
+            </Menu>
+        </StackPanel>
     </Grid>
 </Window>
