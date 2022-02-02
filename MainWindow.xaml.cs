@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Pablo_Burgos_Ap1_p1.UI.Registros;
+using Pablo_Burgos_Ap1_p1.UI.Consultas;
+
 
 namespace Pablo_Burgos_Ap1_p1
 {
@@ -23,6 +26,18 @@ namespace Pablo_Burgos_Ap1_p1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RegistroRegistrosMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            //var rRegistro = new rRegistro();
+            //rRegistro.Show();
+        }
+
+        private void ConsultaConsultasMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            //var cConsulta = new cConsulta();
+            //cConsulta.Show();
         }
     }
 }
