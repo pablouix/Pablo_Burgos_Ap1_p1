@@ -5,26 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Libros" Height="300" Width="300">
+        Title="Registro de Productos" Height="340" Width="300">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
            
            <!-- LibroId Click="BuscarButton_Click"-->
             <StackPanel Orientation="Vertical">
-                <Label Content="Id:"/>
 
+                <Label Content="ProductoId:"/>
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding LibroId}" Width="100" />
+                    <TextBox Text="{Binding ProductosId}" Width="100" />
                     <Button Content="🔎 Buscar"  /> 
                 </StackPanel>
 
+                <Label Content="Descripcion:"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="{Binding Descripcion}" Width="200" />
+                </StackPanel>
+
+                <Label Content="Existencia:"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="{Binding Existencia}" Width="100" />
+                </StackPanel>
+
+                <Label Content="Costo:"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="{Binding Costo}" Width="100" />
+                </StackPanel>
+
+                <Label Content="Valor inventario:"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Text="{Binding ValorInventario}" Width="100" IsEnabled="false"/>
+                </StackPanel>
+
+
             </StackPanel>
 
-
-         
-
-            <!-- BARRA DE BOTONES Click="NuevoButton_Click" Click="GuardarButton_Click" Click="EliminarButton_Click"-->
+            <!-- valor existencia por el codigo BARRA DE BOTONES Click="NuevoButton_Click" Click="GuardarButton_Click" Click="EliminarButton_Click"-->
             <StackPanel 
                         Margin="0,16,0,0"                      
                         Orientation="Horizontal" 
