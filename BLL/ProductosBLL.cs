@@ -54,7 +54,7 @@ namespace Pablo_Burgos_Ap1_p1.BLL
             if(!Existe(productos.ProductosId))
                 return Insertar(productos);
             else
-                return Modificar(productos);
+                return false;
         }
 
         public static bool Eliminar(int ProductosId)
@@ -66,7 +66,11 @@ namespace Pablo_Burgos_Ap1_p1.BLL
             {
                 var productos = contexto.Productos.Find(ProductosId);
 
-                
+                if(productos != null)
+                {
+                    contexto.Productos.Remove(productos);
+                    paso = contexto.SaveChanges() > 0;
+                }
 
             }
             catch(Exception)
@@ -75,8 +79,9 @@ namespace Pablo_Burgos_Ap1_p1.BLL
             }
             finally
             {
-
+                contexto.Dispose();
             }
+            return paso;
         }
 
         public static bool Insertar(Productos productos)
@@ -101,13 +106,14 @@ namespace Pablo_Burgos_Ap1_p1.BLL
             return paso; 
         }
 
-        public static bool Modificar(Productos productos)
+        public static List<Productos> GetLista(Expression<Func<Productos, bool>> criterio)
         {
             Contexto contexto = new Contexto();
-            bool paso = false;
+            List<Productos> listaProductos = new List<Productos>();
 
             try
             {
+                listaProductos = contexto.Productos.Where(criterio).ToList();
 
             }
             catch(Exception)
@@ -118,13 +124,8 @@ namespace Pablo_Burgos_Ap1_p1.BLL
             {
                 contexto.Dispose();
             }
-            return paso;
+            return listaProductos;
 
         }
-
-
-
-
-
     }
 }
