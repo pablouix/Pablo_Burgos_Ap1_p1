@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consulta de Libros" Height="300" Width="400">
+        Title="Consulta de Productos" Height="360" Width="430">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
             
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
 
-                <!-- COMBOBOX -->
+                <!-- COMBOBOX 
                 <Label Content="Filtro:"/>
                 <ComboBox x:Name="FiltroComboBox" Width="100">
                     <ComboBox.Items> 
@@ -20,6 +20,8 @@
                         <ComboBoxItem Content="Grupo" />
                     </ComboBox.Items>
                 </ComboBox>
+
+                -->
 
 
                 <!-- CRITERIO -->
