@@ -30,14 +30,14 @@ namespace Pablo_Burgos_Ap1_p1
 
         private void RegistroRegistrosMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            //var rRegistro = new rRegistro();
-            //rRegistro.Show();
+            var rProducto = new rProducto();
+            rProducto.Show();
         }
 
         private void ConsultaConsultasMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            //var cConsulta = new cConsulta();
-            //cConsulta.Show();
+            var cProducto = new cProducto();
+            cProducto.Show();
         }
     }
 }
