@@ -5,10 +5,10 @@ using Pablo_Burgos_Ap1_p1.BLL;
 
 namespace Pablo_Burgos_Ap1_p1.UI.Consultas
 {
-    public partial class cLibros : Window
+    public partial class cProducto : Window
     {
 
-        public cLibros()
+        public cProducto()
         {
             InitializeComponent();
         }

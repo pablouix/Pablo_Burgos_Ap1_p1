@@ -26,8 +26,8 @@
                 <Label Content="Criterio:"/>
                 <TextBox x:Name="CriterioTextBox"   Width="100" />
 
-                <!-- BUSCAR -->
-                <Button Content="🔎 Buscar" Click="BuscarButton_Click" />
+                <!-- BUSCAR    Click="BuscarButton_Click" -->
+                <Button Content="🔎 Buscar"  />
 
             </StackPanel>
 

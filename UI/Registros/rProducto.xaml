@@ -10,13 +10,13 @@
 
         <StackPanel Orientation="Vertical" Margin="10"> 
            
-           <!-- LibroId -->
+           <!-- LibroId Click="BuscarButton_Click"-->
             <StackPanel Orientation="Vertical">
                 <Label Content="Id:"/>
 
                 <StackPanel Orientation="Horizontal">
                     <TextBox Text="{Binding LibroId}" Width="100" />
-                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
+                    <Button Content="🔎 Buscar"  /> 
                 </StackPanel>
 
             </StackPanel>
@@ -24,15 +24,15 @@
 
          
 
-            <!-- BARRA DE BOTONES -->
+            <!-- BARRA DE BOTONES Click="NuevoButton_Click" Click="GuardarButton_Click" Click="EliminarButton_Click"-->
             <StackPanel 
                         Margin="0,16,0,0"                      
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="🆕 Nuevo" Click="NuevoButton_Click"/>
-                <Button Content="✔ Guardar" Click="GuardarButton_Click" />
-                <Button Content="⛔ Eliminar" Click="EliminarButton_Click"/>
+                <Button Content="🆕 Nuevo" />
+                <Button Content="✔ Guardar"  />
+                <Button Content="⛔ Eliminar" />
             </StackPanel>
 
         </StackPanel>

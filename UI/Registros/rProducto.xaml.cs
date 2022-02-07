@@ -6,9 +6,9 @@ using Pablo_Burgos_Ap1_p1.BLL;
 
 namespace Pablo_Burgos_Ap1_p1.UI.Registros
 {
-    public partial class rLibros : Window
+    public partial class rProducto : Window
     {
-        public rLibros()
+        public rProducto()
         {
             InitializeComponent();
             // this.DataContext = Libro;
