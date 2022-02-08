@@ -31,7 +31,7 @@ namespace Pablo_Burgos_Ap1_p1.UI.Consultas
                     listaProductos = ProductosBLL.GetLista(p => p.Descripcion == CriterioTextBox.Text);
             }
 
-        
+
             ProductosDataGrid.ItemsSource = null;
             ProductosDataGrid.ItemsSource = listaProductos;
         }
