@@ -28,13 +28,13 @@
                 <Label Content="Criterio:"/>
                 <TextBox x:Name="CriterioTextBox"   Width="100" />
 
-                <!-- BUSCAR    Click="BuscarButton_Click" -->
-                <Button Content="🔎 Buscar"  />
+                <!-- BUSCAR     -->
+                <Button Content="🔎 Buscar" Click="BuscarButton_Click" />
 
             </StackPanel>
 
             <!-- GRID -->
-            <DataGrid x:Name="LibrosDataGrid"  Height="250" Width="380"> 
+            <DataGrid x:Name="ProductosDataGrid"  Height="250" Width="380"> 
               
             </DataGrid>
 

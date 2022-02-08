@@ -10,6 +10,6 @@ namespace Pablo_Burgos_Ap1_p1.Entidades
         public string Descripcion { get; set; }
         public string Existencia {get; set; }
         public float Costo { get; set; }
-        public float ValorInventario { get; set; }
+        public float ValorInventario { get; set; } 
     }
 }

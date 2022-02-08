@@ -103,7 +103,7 @@ namespace Pablo_Burgos_Ap1_p1.UI.Registros
             if(ProductosBLL.Eliminar(productos.ProductosId))
             {
                 Limpiar();
-                MessageBox.Show("Producto agregado..");
+                MessageBox.Show("Producto eliminado..");
             }
             else
             {

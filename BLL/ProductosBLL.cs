@@ -71,7 +71,7 @@ namespace Pablo_Burgos_Ap1_p1.BLL
 
         public static bool Guardar(Productos productos)
         {
-            if(!Existe(productos.ProductosId) || !ExisteDescripcion(productos.Descripcion))
+            if(!Existe(productos.ProductosId) && !ExisteDescripcion(productos.Descripcion))
                 return Insertar(productos);
             else
                 return false;
