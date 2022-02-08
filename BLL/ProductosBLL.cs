@@ -30,6 +30,26 @@ namespace Pablo_Burgos_Ap1_p1.BLL
             return paso;
         }
 
+        public static bool ExisteDescripcion(string Descripcion)
+        {
+            Contexto contexto = new Contexto();
+            bool paso = false;
+
+            try
+            {
+                paso = contexto.Productos.Any(p => p.Descripcion == Descripcion);
+            }
+            catch(Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                contexto.Dispose();
+            }
+            return paso;
+        }
+
         public static Productos Buscar(int ProductosId)
         {
             Contexto contexto = new Contexto();
@@ -51,7 +71,7 @@ namespace Pablo_Burgos_Ap1_p1.BLL
 
         public static bool Guardar(Productos productos)
         {
-            if(!Existe(productos.ProductosId))
+            if(!Existe(productos.ProductosId) || !ExisteDescripcion(productos.Descripcion))
                 return Insertar(productos);
             else
                 return false;
