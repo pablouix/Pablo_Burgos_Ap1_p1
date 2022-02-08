@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1"
         mc:Ignorable="d"
-        Title="Sistema de gestion" Height="300" Width="400">
+        Title="Sistema de gestion productos" Height="300" Width="400">
     <Grid>
         <StackPanel>
             <Menu>
