@@ -32,8 +32,8 @@ namespace Pablo_Burgos_Ap1_p1.UI.Consultas
             }
 
         
-            ProductosDataGrid.ItemSource = null;
-            productosDataGrid.ItemSource = listaProductos;
+            ProductosDataGrid.ItemsSource = null;
+            ProductosDataGrid.ItemsSource = listaProductos;
         }
     }
 }

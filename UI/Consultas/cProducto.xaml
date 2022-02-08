@@ -34,7 +34,7 @@
             </StackPanel>
 
             <!-- GRID -->
-            <DataGrid x:Name="ProductosDataGrid"  Height="250" Width="380"> 
+            <DataGrid x:Name="ProductosDataGrid" Height="250" Width="380"> 
               
             </DataGrid>
 
