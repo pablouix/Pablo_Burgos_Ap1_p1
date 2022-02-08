@@ -11,11 +11,11 @@
             <Menu>
             
                 <MenuItem Header="Registros">
-                    <MenuItem Header ="Registros" x:Name="rRegistro" Click="RegistroRegistrosMenuItem_Click" />
+                    <MenuItem Header ="Productos" x:Name="rRegistro" Click="RegistroRegistrosMenuItem_Click" />
                 </MenuItem>
 
                 <MenuItem Header="Consultas">
-                    <MenuItem Header="Consultas" x:Name = "cConsulta" Click="ConsultaConsultasMenuItem_Click" />
+                    <MenuItem Header="Productos" x:Name = "cConsulta" Click="ConsultaConsultasMenuItem_Click" />
                 </MenuItem>
 
             </Menu>
