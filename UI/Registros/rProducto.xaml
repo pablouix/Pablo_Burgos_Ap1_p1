@@ -5,52 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Productos" Height="340" Width="300">
+        Title="Registro de Productos" Height="400" Width="360">
     <Grid>
 
-        <StackPanel Orientation="Vertical" Margin="10"> 
-           
-           <!-- LibroId -->
+        <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center"> 
+           <TextBlock Text="Productos 🛍️" FontSize="24" HorizontalAlignment="Center" />
             <StackPanel Orientation="Vertical">
 
-                <Label Content="ProductoId:"/>
+                <Label Content="ProductoId:" FontSize="14" />
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding ProductosId}" Width="100" />
-                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
+                    <TextBox Text="{Binding ProductosId}" Width="100" Height="22" VerticalContentAlignment="Center" />
+                    <Button Content="🔎" Margin="10,0,10,0" Click="BuscarButton_Click" Height="22" Width="22"/> 
                 </StackPanel>
 
-                <Label Content="Descripcion:"/>
+                <Label Content="Descripcion:" FontSize="14" />
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding Descripcion}" Width="200" />
+                    <TextBox Text="{Binding Descripcion}" Width="200" Height="22" VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <Label Content="Existencia:"/>
+                <Label Content="Existencia:" FontSize="14" />
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding Existencia}" Width="100" />
+                    <TextBox Text="{Binding Existencia}" Width="100" Height="22" VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <Label Content="Costo:"/>
+                <Label Content="Costo:" FontSize="14" />
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding Costo}" Width="100" />
+                    <TextBox Text="{Binding Costo}" Width="100" Height="22" VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <Label Content="Valor inventario:"/>
+                <Label Content="Valor inventario:" FontSize="14" />
                 <StackPanel Orientation="Horizontal">
-                    <TextBox Text="{Binding ValorInventario}" Width="100" IsEnabled="false"/>
+                    <TextBox Text="{Binding ValorInventario}" Width="100" IsEnabled="false" Height="22" VerticalContentAlignment="Center"/>
                 </StackPanel>
 
 
             </StackPanel>
 
-            <!-- valor existencia por el codigo BARRA DE BOTONES   -->
+            <!-- BARRA DE BOTONES   -->
             <StackPanel 
                         Margin="0,16,0,0"                      
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="🆕 Nuevo" Click="NuevoButton_Click"/>
-                <Button Content="✔ Guardar" Click="GuardarButton_Click"/>
-                <Button Content="⛔ Eliminar" Click="EliminarButton_Click"/>
+                <Button Content="🆕 Nuevo"  Width="70"  Height="30" Margin="10,0,10,0" Click="NuevoButton_Click"/>
+                <Button Content="✔ Guardar" Width="70"  Height="30" Margin="10,0,10,0" Click="GuardarButton_Click"/>
+                <Button Content="⛔ Eliminar" Width="70"  Height="30" Margin="10,0,10,0" Click="EliminarButton_Click"/>
             </StackPanel>
 
         </StackPanel>
