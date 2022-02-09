@@ -84,6 +84,8 @@ namespace Pablo_Burgos_Ap1_p1.UI.Registros
             if(!Validar())
                 return;
 
+            productos.ValorInventario = productos.Costo*productos.Existencia;
+
             paso = ProductosBLL.Guardar(productos);
             if(paso)
             {
