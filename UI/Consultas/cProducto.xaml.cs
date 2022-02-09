@@ -17,7 +17,9 @@ namespace Pablo_Burgos_Ap1_p1.UI.Consultas
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
-           var listaProductos = new List<Productos>();
+            string ValorTotalInventario = null;
+
+            var listaProductos = new List<Productos>();
 
             if(string.IsNullOrWhiteSpace(CriterioTextBox.Text))
                 listaProductos = ProductosBLL.GetLista(p => true);
@@ -34,6 +36,9 @@ namespace Pablo_Burgos_Ap1_p1.UI.Consultas
 
             ProductosDataGrid.ItemsSource = null;
             ProductosDataGrid.ItemsSource = listaProductos;
+
+            ValorTotalInventario = Convert.ToString(listaProductos.Sum(v => v.ValorInventario));
+            ValorInventarioTextBox.Text = ValorTotalInventario;
         }
     }
 }
