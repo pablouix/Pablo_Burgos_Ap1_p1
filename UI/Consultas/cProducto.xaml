@@ -5,38 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consulta de Productos" Height="360" Width="430">
+        Title="Consulta de Productos" Height="400" Width="430">
     <Grid>
 
-        <StackPanel Orientation="Vertical" Margin="10"> 
+        <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center"> 
             
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-
-                <!-- COMBOBOX 
-                <Label Content="Filtro:"/>
-                <ComboBox x:Name="FiltroComboBox" Width="100">
-                    <ComboBox.Items> 
-                        <ComboBoxItem Content="Titulo" />
-                        <ComboBoxItem Content="Grupo" />
-                    </ComboBox.Items>
-                </ComboBox>
-
-                -->
-
-
                 <!-- CRITERIO -->
-                <Label Content="Criterio:"/>
-                <TextBox x:Name="CriterioTextBox"   Width="100" />
+                <Label Content="Criterio:" FontSize="14"/>
+                <TextBox x:Name="CriterioTextBox" Width="100" Height="22" VerticalContentAlignment="Center" />
 
                 <!-- BUSCAR     -->
-                <Button Content="🔎 Buscar" Click="BuscarButton_Click" />
+                <Button Content="🔎 Buscar" Click="BuscarButton_Click" Height="22" Margin="10,0,10,0" Width="70"/>
 
             </StackPanel>
 
-            <!-- GRID -->
-            <DataGrid x:Name="ProductosDataGrid" Height="250" Width="380"> 
-              
-            </DataGrid>
+            <StackPanel  Margin="0,16,0,0">
+                <DataGrid x:Name="ProductosDataGrid" Height="250" Width="380"> 
+                
+                </DataGrid>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <Label Content="Valor Inventario total:" />
+                <TextBlock Text="0" x:Name="ValorInventarioTextBox" Margin="0,6,0,6" />
+            </StackPanel>
 
         </StackPanel>
 
