@@ -8,7 +8,7 @@ namespace Pablo_Burgos_Ap1_p1.Entidades
         [Key]
         public int ProductosId { get; set; }
         public string Descripcion { get; set; }
-        public string Existencia {get; set; }
+        public float Existencia {get; set; }
         public float Costo { get; set; }
         public float ValorInventario { get; set; } 
     }

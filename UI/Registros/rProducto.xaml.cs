@@ -41,7 +41,7 @@ namespace Pablo_Burgos_Ap1_p1.UI.Registros
                 esValido = false;
                 MessageBox.Show("Introduce la descripcion del producto..");
             }
-            else if (string.IsNullOrWhiteSpace(productos.Existencia))
+            else if (string.IsNullOrWhiteSpace(Convert.ToString(productos.Existencia)))
             {
                 esValido = false;
                 MessageBox.Show("Introduce la existencia");
