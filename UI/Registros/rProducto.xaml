@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pablo_Burgos_Ap1_p1.UI.Registros"
         mc:Ignorable="d"
-        Title="Registro de Productos" Height="400" Width="360">
+        Title="Registro de Productos" Height="420" Width="460">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center"> 
@@ -15,7 +15,7 @@
                 <Label Content="ProductoId:" FontSize="14" />
                 <StackPanel Orientation="Horizontal">
                     <TextBox Text="{Binding ProductosId}" Width="100" Height="22" VerticalContentAlignment="Center" />
-                    <Button Content="🔎" Margin="10,0,10,0" Click="BuscarButton_Click" Height="22" Width="22"/> 
+                    <Button Content="🔎" Margin="10,0,10,0" Click="BuscarButton_Click" Height="30" Width="50"/> 
                 </StackPanel>
 
                 <Label Content="Descripcion:" FontSize="14" />
@@ -47,9 +47,9 @@
                         Orientation="Horizontal" 
                         HorizontalAlignment="Center" >
                 
-                <Button Content="🆕 Nuevo"  Width="70"  Height="30" Margin="10,0,10,0" Click="NuevoButton_Click"/>
-                <Button Content="✔ Guardar" Width="70"  Height="30" Margin="10,0,10,0" Click="GuardarButton_Click"/>
-                <Button Content="⛔ Eliminar" Width="70"  Height="30" Margin="10,0,10,0" Click="EliminarButton_Click"/>
+                <Button Content="🆕 Nuevo"  Width="110"  Height="40" Margin="10,0,10,0" Click="NuevoButton_Click"/>
+                <Button Content="✔ Guardar" Width="110"  Height="40" Margin="10,0,10,0" Click="GuardarButton_Click"/>
+                <Button Content="⛔ Eliminar" Width="110"  Height="40" Margin="10,0,10,0" Click="EliminarButton_Click"/>
             </StackPanel>
 
         </StackPanel>
