@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.4.0-ci74" />
     <PackageReference Include="Microsoft.EntityFrameWorkCore.SqLite" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameWorkCore.Tools" Version="6.0.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
